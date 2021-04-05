@@ -1,10 +1,10 @@
-#calling objects
+#Importing objects
 import os
 import re
 import webbrowser
 
 #exposing what is in this adress
-os.chdir('C:\\Users\\FREDRICK\\Downloads\\Compressed\\prank\\pranks')
+os.chdir('C:\\Users\\FREDRICK\\Desktop\\study\\study1\\My code')
 
 print(f"We have: {os.listdir()}")
 
@@ -15,15 +15,14 @@ rename=(re.sub('[0-9]', '', path_2))
 
 print (rename)
 
-path="C:\\Users\\FREDRICK\\Downloads\\Compressed\\prank\\pranks"
+path="C:\\Users\\FREDRICK\\Desktop\\study\\study1\\My code"
 
-#defining file_name
-def file_rename():
-    os.chdir(r'C:\\Users\\FREDRICK\\Downloads\\Compressed\\prank\\pranks')
-    name_list=os.chdir('C:\\Users\\FREDRICK\\Downloads\\Compressed\\prank\\pranks')
-    
+name_list=os.chdir('C:\\Users\\FREDRICK\\Desktop\\study\\study1\\My code')
 
 #applying changes in the adress    
-for file_name in os.listdir('C:\\Users\\FREDRICK\\Downloads\\Compressed\\prank\\pranks'):
-    os.renames(file_name,file_name.strip('1234567890'))
+for fileName in os.listdir('C:\\Users\\FREDRICK\\Desktop\\study\\study1\\My code'):
+    os.renames(fileName,fileName.strip('1234567890'))
     webbrowser.open(path)
+    
+a = fileName
+print (a)
